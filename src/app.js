@@ -8,7 +8,7 @@ const resultScreen = document.getElementById("result-screen");
 const progressText = document.getElementById("progress");
 const questionText = document.getElementById("question-text");
 const optionsList = document.getElementById("options");
-const feedbackText = document.getElementById("feedback");
+const answerFeedback = document.getElementById("feedback");
 const nextButton = document.getElementById("next-btn");
 const scoreText = document.getElementById("score-text");
 const gradeText = document.getElementById("grade-text");
@@ -79,6 +79,9 @@ function showResults() {
   const percentage = calculatePercentage(state.score, total);
   scoreText.textContent = `You scored ${state.score} out of ${total} (${percentage}%)`;
   gradeText.textContent = `Grade: ${getGrade(percentage)}`;
+  document.getElementById("feedback-message").textContent = getFeedbackMessage(
+    getGrade(percentage),
+  );
   showScreen(resultScreen);
 }
 

@@ -1,0 +1,5 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - heading "Dev Days Quiz" [level=1] [ref=e4]
+    - paragraph [ref=e5]: Six quick questions about Git, GitHub and Copilot.
+    - button "Start quiz" [ref=e6] [cursor=pointer]

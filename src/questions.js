@@ -13,7 +13,12 @@ const QUESTIONS = [
   },
   {
     question: "What does PR stand for on GitHub?",
-    options: ["Pull request", "Push release", "Project review", "Public repository"],
+    options: [
+      "Pull request",
+      "Push release",
+      "Project review",
+      "Public repository",
+    ],
     answer: 0,
   },
   {
@@ -23,7 +28,12 @@ const QUESTIONS = [
   },
   {
     question: "Which file gives Copilot custom instructions for a repository?",
-    options: [".github/copilot-instructions.md", "copilot.json", ".vscode/ai.txt", "package.json"],
+    options: [
+      ".github/copilot-instructions.md",
+      "copilot.json",
+      ".vscode/ai.txt",
+      "package.json",
+    ],
     answer: 0,
   },
   {
@@ -35,6 +45,22 @@ const QUESTIONS = [
       "Merges two branches",
     ],
     answer: 1,
+  },
+  {
+    question:
+      "Which command stages all changes in the current directory for commit?",
+    options: ["git add .", "git commit -m", "git push", "git status"],
+    answer: 0,
+  },
+  {
+    question: "Which command shows the commit history of a repository?",
+    options: ["git log", "git history", "git status", "git show"],
+    answer: 0,
+  },
+  {
+    question: "Which command uploads local commits to a remote repository?",
+    options: ["git push", "git pull", "git fetch", "git upload"],
+    answer: 0,
   },
 ];
 
