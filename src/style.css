@@ -64,6 +64,15 @@ h2 {
   gap: 0.6rem;
 }
 
+.timer {
+  margin-bottom: 0;
+}
+
+.timer-low {
+  color: var(--wrong);
+  font-weight: 700;
+}
+
 button {
   font: inherit;
   cursor: pointer;
