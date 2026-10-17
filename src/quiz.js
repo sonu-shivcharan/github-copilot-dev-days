@@ -60,6 +60,13 @@ function calculatePercentage(score, total) {
 }
 
 /**
+ * Returns whether the current percentage is a new best score.
+ */
+function isNewBestScore(current, best) {
+  return best === null || current > best;
+}
+
+/**
  * Turns a percentage into a grade.
  * A = 90% or more, B = 75% or more, C = 50% or more.
  */
@@ -100,6 +107,7 @@ if (typeof module !== "undefined" && module.exports) {
     answerQuestion,
     isQuizFinished,
     calculatePercentage,
+    isNewBestScore,
     getGrade,
     getFeedbackMessage,
     formatTimeLeft,
